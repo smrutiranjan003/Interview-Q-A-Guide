@@ -5,7 +5,7 @@ This file includes a structured summary of my ABAP profile, RAP project experien
 
 ---
 ## 🧩 **1. Tell Me About Yourself (Final Version for SGN Software – Fiori/UI5 Consultant)**
-## 🙋‍♂️
+
 “Good afternoon sir/ma’am. My name is Smruti Ranjan Mohapatra. I’ve completed my B.Tech in Computer Science and Engineering and recently finished my SAP ABAP and SAP Fiori training under Skill Odisha.
 
 I’m an SAP Certified Associate in both *SAP Fiori Application Development* and *SAP ABAP Cloud (Back-End Developer)*. During my learning and internship phase, I built full-stack RAP-based applications like *Employee Master* and *Inventory Management*, handling both backend logic and frontend integration.
@@ -18,6 +18,23 @@ Now, I’m looking for an opportunity at SGN Software to apply these skills in r
 🧠 *Tip:* Say this confidently, maintaining a conversational tone — not too fast, and smile briefly when you mention your certifications.
 
 ---
+## 🙋‍♂️ **2. Tell Me About Your projects:**
+## 💻 **Answer:**
+
+“I’ve worked on two full-stack RAP-based Fiori applications — *Employee Master* and *Inventory Management*.
+
+In both projects, I handled the complete flow — from backend logic in RAP to frontend integration in Fiori.
+On the backend, I created custom tables, CDS views, and behavior definitions to manage CRUD operations, then exposed the data as OData V4 services.
+
+On the frontend, I used SAP Business Application Studio to generate Fiori Elements UIs like List Report and Object Page, connected them to the OData services, and deployed everything on SAP BTP Cloud Foundry with HANA Cloud as the database.
+
+These projects helped me understand how the backend and UI work together in SAP’s cloud environment and gave me hands-on experience in RAP, CDS, OData, and Fiori Elements.”
+
+🧩 **Keywords:** RAP | CDS Views | Behavior Definition | OData V4 | Fiori Elements | BAS | Cloud Foundry | HANA Cloud | End-to-End Integration
+
+---
+
+Would you like me to make a **one-minute spoken version** of this — short enough to say smoothly in your interview tomorrow?
 
 ## 💻 **Q1. Explain your Employee Master RAP project in detail**
 
