@@ -4,13 +4,8 @@
 This file includes a structured summary of my ABAP profile, RAP project experience, core concepts, and HR/technical interview answers — perfect for GitHub portfolio and interviews.
 
 ---
-
-## 🙋‍♂️ Got it — since you’ve already graduated (August 2) and completed your Skill Odisha SAP ABAP training, you’re now a **fresher ready for full-time roles**, not a student. Here’s your **final refined version** of the “Tell Me About Yourself” and project explanation, rewritten to perfectly match your **SAP Fiori/UI5 Consultant interview at SGN Software** tomorrow.
-
----
-
 ## 🧩 **1. Tell Me About Yourself (Final Version for SGN Software – Fiori/UI5 Consultant)**
-
+## 🙋‍♂️
 “Good morning sir/ma’am. My name is Smruti Ranjan Mohapatra. I’ve completed my B.Tech in Computer Science and Engineering and recently finished my SAP ABAP and SAP Fiori training under Skill Odisha.
 
 I’m an SAP Certified Associate in both *SAP Fiori Application Development* and *SAP ABAP Cloud (Back-End Developer)*. During my learning and internship phase, I built full-stack RAP-based applications like *Employee Master* and *Inventory Management*, handling both backend logic and frontend integration.
