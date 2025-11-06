@@ -31,10 +31,7 @@ On the frontend, I used SAP Business Application Studio to generate Fiori Elemen
 These projects helped me understand how the backend and UI work together in SAP’s cloud environment and gave me hands-on experience in RAP, CDS, OData, and Fiori Elements.”
 
 🧩 **Keywords:** RAP | CDS Views | Behavior Definition | OData V4 | Fiori Elements | BAS | Cloud Foundry | HANA Cloud | End-to-End Integration
-
 ---
-
-Would you like me to make a **one-minute spoken version** of this — short enough to say smoothly in your interview tomorrow?
 
 ## 💻 **Q1. Explain your Employee Master RAP project in detail**
 
