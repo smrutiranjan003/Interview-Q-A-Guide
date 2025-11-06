@@ -3,7 +3,7 @@
 This file includes a structured summary of my ABAP profile, RAP project experience, core concepts, and HR/technical interview answers — perfect for GitHub portfolio and interviews.
 
 ---
-## 🧩 **1. Tell Me About Yourself (Final Version for SGN Software – Fiori/UI5 Consultant)**
+## 👋 **1. Tell Me About Yourself (Final Version for SGN Software – Fiori/UI5 Consultant)**
 
 “Good afternoon sir/ma’am. My name is Smruti Ranjan Mohapatra. I’ve completed my B.Tech in Computer Science and Engineering and recently finished my SAP ABAP and SAP Fiori training under Skill Odisha.
 
@@ -86,20 +86,7 @@ CDS Associations | Behavior Definition | RAP | OData V4 | Fiori Elements | List 
 
 ---
 
-## 👋 Tell Me About Yourself
-
-🙋‍♂️ **Smruti Ranjan Mohapatra**  
-"My name is **Smruti Ranjan Mohapatra**, a final-year B.Tech (CSE) student. I'm currently undergoing **SAP ABAP training under Skill Odisha**.
-
-During my training, I built a complete **Employee Master RAP application** using **CDS**, **behavior definition**, and **OData V4**, which I successfully **deployed on SAP BTP Cloud Foundry**. I enjoy backend development and exploring new SAP technologies."
-
----
-
-## ✅ SAP FIORI INTERVIEW QUESTIONS & ANSWERS FOR FRESHERS
-
----
-
-## 🧩 **Top 30 SAP Fiori Interview Questions & Answers (Final Merged Version – 2025)**
+## ✅ **TOP 30 SAP FIORI INTERVIEW QUESTIONS & ANSWERS FOR FRESHERS (Final Merged Version – 2025)**
 
 ---
 
