@@ -1,4 +1,4 @@
-# 🚀 SGN Software SAP FIORI Resume Projects & 👨‍💻 Interview Q&A for Freshers
+# 🚀 SAP FIORI Resume Projects & 👨‍💻 Interview Q&A for Freshers
 
 This file includes a structured summary of my ABAP profile, RAP project experience, core concepts, and HR/technical interview answers — perfect for GitHub portfolio and interviews.
 
