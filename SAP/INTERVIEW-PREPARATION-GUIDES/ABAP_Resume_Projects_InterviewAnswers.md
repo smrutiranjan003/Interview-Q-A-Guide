@@ -6,7 +6,7 @@ This file includes a structured summary of my ABAP profile, RAP project experien
 ---
 ## 🧩 **1. Tell Me About Yourself (Final Version for SGN Software – Fiori/UI5 Consultant)**
 ## 🙋‍♂️
-“Good morning sir/ma’am. My name is Smruti Ranjan Mohapatra. I’ve completed my B.Tech in Computer Science and Engineering and recently finished my SAP ABAP and SAP Fiori training under Skill Odisha.
+“Good afternoon sir/ma’am. My name is Smruti Ranjan Mohapatra. I’ve completed my B.Tech in Computer Science and Engineering and recently finished my SAP ABAP and SAP Fiori training under Skill Odisha.
 
 I’m an SAP Certified Associate in both *SAP Fiori Application Development* and *SAP ABAP Cloud (Back-End Developer)*. During my learning and internship phase, I built full-stack RAP-based applications like *Employee Master* and *Inventory Management*, handling both backend logic and frontend integration.
 
