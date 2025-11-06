@@ -19,7 +19,6 @@ Now, I’m looking for an opportunity at SGN Software to apply these skills in r
 
 ---
 ## 🙋‍♂️ **2. Tell Me About Your projects:**
-## 💻 **Answer:**
 
 “I’ve worked on two full-stack RAP-based Fiori applications — *Employee Master* and *Inventory Management*.
 
@@ -31,6 +30,7 @@ On the frontend, I used SAP Business Application Studio to generate Fiori Elemen
 These projects helped me understand how the backend and UI work together in SAP’s cloud environment and gave me hands-on experience in RAP, CDS, OData, and Fiori Elements.”
 
 🧩 **Keywords:** RAP | CDS Views | Behavior Definition | OData V4 | Fiori Elements | BAS | Cloud Foundry | HANA Cloud | End-to-End Integration
+
 ---
 
 ## 💻 **Q1. Explain your Employee Master RAP project in detail**
