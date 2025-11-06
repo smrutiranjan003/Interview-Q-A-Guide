@@ -19,41 +19,6 @@ Now, I’m looking for an opportunity at SGN Software to apply these skills in r
 
 ---
 
-## 💻 **2. Project-Based Questions & Answers**
-
-### **Q1. Explain your Employee Master RAP project.**
-
-**Answer:**
-“My Employee Master project is a managed RAP-based Fiori application that stores employee details such as ID, Name, Department, and Salary.
-
-First, I created a custom database table, followed by CDS root and projection views for data modeling.
-Next, I defined a behavior definition to handle Create, Update, and Delete operations automatically, since it’s a managed scenario.
-
-After that, I exposed the service through a service definition and binding, which generated an OData V4 service.
-Finally, I used SAP Fiori Elements in Business Application Studio to automatically generate the UI, tested it in the preview environment, and deployed it on SAP BTP Cloud Foundry.
-
-This project gave me a complete understanding of the RAP architecture and how backend and frontend components work together in a full-stack Fiori application.”
-
-🧩 **Key terms to mention:**
-Managed Scenario | CDS Views | Behavior Definition | OData V4 | Fiori Elements | Cloud Foundry | SAP BAS | End-to-End Integration
-
----
-
-## 💬 **If asked about your environment/tools**
-
-**Answer:**
-“I worked mainly in SAP Business Application Studio on BTP. For the backend, I used RAP on ABAP Cloud with HANA as the database. For testing and validation, I used Postman to check OData responses and the Fiori Elements preview in BAS for the UI layer.”
-
----
-
-Here’s how you can **expand your project answers** to clearly show your **end-to-end understanding** of both backend (RAP, CDS, OData) and frontend (Fiori Elements/UI5) — exactly what SGN Software’s panel will want to hear.
-
-Use this version when they ask:
-
-> “Tell me more about your Employee Master or Inventory Management RAP project.”
-
----
-
 ## 💻 **Q1. Explain your Employee Master RAP project in detail**
 
 **Answer:**
@@ -98,6 +63,13 @@ CDS Associations | Behavior Definition | RAP | OData V4 | Fiori Elements | List 
 
 **Answer:**
 “The Employee Master app focused on managing employee data and mastering CRUD operations through RAP and Fiori Elements, while the Inventory Management app included multiple tables with associations and more complex logic for stock updates. Both projects strengthened my understanding of full-stack SAP development using RAP, OData, and Fiori Elements.”
+
+---
+
+## 💬 **If asked about your environment/tools**
+
+**Answer:**
+“I worked mainly in SAP Business Application Studio on BTP. For the backend, I used RAP on ABAP Cloud with HANA as the database. For testing and validation, I used Postman to check OData responses and the Fiori Elements preview in BAS for the UI layer.”
 
 ---
 
