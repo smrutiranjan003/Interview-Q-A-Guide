@@ -1,5 +1,3 @@
-⸻
-
 💻 Technical Round (HTML/CSS, JS, React.js)
 
 1. Semantic vs Non-Semantic HTML
