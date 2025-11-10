@@ -213,3 +213,17 @@ Requirements:
 > Since I’m available immediately (or within 30–45 days if applicable), I can join as per project requirements.
 
 ---
+
+### 🟡 **Intermediate / 2–5 Years Experience Level**
+
+> These show up when the interviewer wants to test **depth** or **real-world understanding**:
+
+**9. WeakMap and when to use it**
+
+**10. React Fiber and Concurrent Rendering**
+
+**14. Error boundaries in functional components (edge concept)**
+
+> You won’t usually get these in the **first round** as a fresher, but sometimes interviewers throw one or two to see if you’ve gone beyond tutorials.
+
+---
