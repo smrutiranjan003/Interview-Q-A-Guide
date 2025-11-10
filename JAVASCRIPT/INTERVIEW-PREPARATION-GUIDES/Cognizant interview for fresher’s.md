@@ -1,209 +1,215 @@
-💻 Technical Round (HTML/CSS, JS, React.js)
+## 💻 **Technical Round (HTML/CSS, JS, React.js)**
 
-1. Semantic vs Non-Semantic HTML
+**1. Explain the difference between semantic and non-semantic HTML tags. Why does semantic HTML improve SEO and accessibility?**
 
-Semantic tags like <header>, <article>, <nav> clearly describe their purpose, while non-semantic tags like <div> or <span> don’t.
-Semantic HTML improves SEO because search engines understand page structure better, and it helps screen readers improve accessibility for users with disabilities.
+> Semantic tags like `<header>`, `<article>`, `<nav>` clearly describe their purpose, while non-semantic tags like `<div>` or `<span>` don’t.
+> Semantic HTML improves SEO because search engines understand page structure better, and it helps screen readers improve accessibility for users with disabilities.
 
-⸻
+---
 
-2. ARIA Roles
+**2. What are ARIA roles and how do they help improve accessibility?**
 
-ARIA roles provide extra information to assistive technologies.
-For example, role="button" on a custom element helps screen readers announce it as a button, making the app more accessible.
+> ARIA roles provide extra information to assistive technologies.
+> For example, `role="button"` on a custom element helps screen readers announce it as a button, making the app more accessible.
 
-⸻
+---
 
-3. CSS Specificity and Cascade
+**3. How do CSS Specificity and Cascade rules interact?**
 
-Specificity decides which CSS rule wins if multiple rules target the same element.
-Inline styles > IDs > Classes > Elements.
-Cascade means later rules can override earlier ones if specificity is the same.
+> Specificity decides which CSS rule wins if multiple rules target the same element.
+> Inline styles > IDs > Classes > Elements.
+> Cascade means later rules can override earlier ones if specificity is the same.
 
-⸻
+---
 
-4. Inline, Block, Inline-Block
+**4. Compare inline, block, and inline-block elements with examples.**
 
-	•	Inline: takes only as much width as needed (<span>).
-	•	Block: takes full width and starts on a new line (<div>).
-	•	Inline-block: behaves like inline but allows width and height (<img>).
+> * Inline: takes only as much width as needed (`<span>`).
+> * Block: takes full width and starts on a new line (`<div>`).
+> * Inline-block: behaves like inline but allows width and height (`<img>`).
 
-⸻
+---
 
-5. Responsive Layout without Media Queries
+**5. How can you make a complex layout responsive without using media queries (e.g., using Flexbox or Grid techniques)?**
 
-Using Flexbox or CSS Grid — they automatically adjust layout based on available space.
-For example, flex-wrap: wrap or grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) helps elements adapt to screen size.
+> Using **Flexbox** or **CSS Grid** — they automatically adjust layout based on available space.
+> For example, `flex-wrap: wrap` or `grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))` helps elements adapt to screen size.
 
-⸻
+---
 
-6. Shallow vs Deep Copy
+**6. Explain the difference between shallow copy and deep copy in JavaScript. How would you implement a deep copy manually?**
 
-Shallow copy copies only one level of an object; nested objects still share references.
-Deep copy duplicates everything.
-Example:
+> Shallow copy copies only one level of an object; nested objects still share references.
+> Deep copy duplicates everything.
+> Example:
+>
+> ```js
+> const deepCopy = JSON.parse(JSON.stringify(obj));
+> ```
 
-const deepCopy = JSON.parse(JSON.stringify(obj));
+---
 
+**7. What is the difference between call, apply, and bind? Give examples of each.**
 
+> * **call()** – calls function with given `this` and arguments separated.
+> * **apply()** – same but arguments are passed as an array.
+> * **bind()** – returns a new function with bound `this`.
+>
+> ```js
+> func.call(obj, a, b);
+> func.apply(obj, [a, b]);
+> const newFunc = func.bind(obj);
+> ```
 
-⸻
+---
 
-7. Call, Apply, Bind
+**8. How would you debounce and throttle a function manually without libraries?**
 
-	•	call() – calls function with given this and arguments separated.
-	•	apply() – same but arguments are passed as an array.
-	•	bind() – returns a new function with bound this.
+> * **Debounce:** waits for a pause before executing (e.g., search input).
+> * **Throttle:** limits execution to once in a set time (e.g., scroll).
+>
+> ```js
+> function debounce(fn, delay){ let t; return (...a)=>{clearTimeout(t); t=setTimeout(()=>fn(...a),delay);} }
+> ```
 
-func.call(obj, a, b);
-func.apply(obj, [a, b]);
-const newFunc = func.bind(obj);
+---
 
+**9. What is a WeakMap and when would you prefer it over a normal Map?**
 
+> WeakMap keys must be objects and are garbage-collected automatically.
+> It’s used for private data storage where we don’t want memory leaks.
 
-⸻
+---
 
-8. Debounce and Throttle
+**10. What are React Fiber and Concurrent Rendering? How do they improve UI responsiveness?**
 
-	•	Debounce: waits for a pause before executing (e.g., search input).
-	•	Throttle: limits execution to once in a set time (e.g., scroll).
+> React Fiber is the re-written core algorithm that allows **splitting rendering work into chunks**.
+> Concurrent Rendering improves UI responsiveness by pausing and resuming rendering tasks, so the UI stays smooth.
 
-function debounce(fn, delay){ let t; return (...a)=>{clearTimeout(t); t=setTimeout(()=>fn(...a),delay);} }
+---
 
+**11. Difference between controlled and uncontrolled components. Which one is better for large forms and why?**
 
+> Controlled: React manages the form state.
+> Uncontrolled: DOM manages it via refs.
+> For large forms, controlled components are better since they provide full control and validation handling.
 
-⸻
+---
 
-9. WeakMap
+**12. Explain custom hooks — when would you create one? Provide an example for data fetching with error handling.**
 
-WeakMap keys must be objects and are garbage-collected automatically.
-It’s used for private data storage where we don’t want memory leaks.
+> Custom hooks reuse logic across components.
+> Example for data fetching:
+>
+> ```js
+> function useFetch(url){
+>  const [data,setData]=useState(null);
+>  const [error,setError]=useState(null);
+>  useEffect(()=>{
+>   fetch(url).then(r=>r.json()).then(setData).catch(setError);
+>  },[url]);
+>  return {data,error};
+> }
+> ```
 
-⸻
+---
 
-10. React Fiber and Concurrent Rendering
+**13. How does React.memo differ from useMemo?**
 
-React Fiber is the re-written core algorithm that allows splitting rendering work into chunks.
-Concurrent Rendering improves UI responsiveness by pausing and resuming rendering tasks, so the UI stays smooth.
+> * `React.memo` memoizes entire **components**.
+> * `useMemo` memoizes **values or calculations** inside a component.
+>   `React.memo` avoids re-renders, while `useMemo` avoids expensive recalculations.
 
-⸻
+---
 
-11. Controlled vs Uncontrolled Components
+**14. How do you handle error boundaries in React functional components (since they only exist for class components)?**
 
-Controlled: React manages the form state.
-Uncontrolled: DOM manages it via refs.
-For large forms, controlled components are better since they provide full control and validation handling.
+> Functional components can handle errors using **`ErrorBoundary` wrappers** or **`useErrorBoundary`** from libraries like React Error Boundary.
+> Alternatively, use try-catch inside async functions or data-fetching logic.
 
-⸻
+---
 
-12. Custom Hooks
+**15. How do you implement code-splitting and dynamic imports in React?**
 
-Custom hooks reuse logic across components.
-Example for data fetching:
+> Use `React.lazy()` and `Suspense`:
+>
+> ```js
+> const About = React.lazy(() => import('./About'));
+> ```
+>
+> This loads the component only when needed, improving performance.
 
-function useFetch(url){
- const [data,setData]=useState(null);
- const [error,setError]=useState(null);
- useEffect(()=>{
-  fetch(url).then(r=>r.json()).then(setData).catch(setError);
- },[url]);
- return {data,error};
-}
+---
 
+**16. Difference between Context API and Redux — when would you choose one over the other in a mid-size project?**
 
+> * Context API: lightweight and great for simple state sharing (like theme or auth).
+> * Redux: better for large apps with complex state logic and middleware.
+>   For mid-size projects, Context API is often enough.
 
-⸻
+---
 
-13. React.memo vs useMemo
+**17. React Component Task: Build a Search with Suggestions Component. 
+Requirements: 
+-- Input box that fetches suggestions (simulate with a static array or mock API). 
+-- Show filtered suggestions below as the user types. 
+-- Highlight the matching characters in suggestions.**
 
-	•	React.memo memoizes entire components.
-	•	useMemo memoizes values or calculations inside a component.
-React.memo avoids re-renders, while useMemo avoids expensive recalculations.
+> Create an input that filters from a static array as user types.
+> Highlight matching text using regex and wrap it with a `<mark>` tag.
+> You can manage state using `useState` and filter suggestions in real-time.
 
-⸻
+---
 
-14. Error Boundaries in Functional Components
+## 🧠 **Managerial Round**
 
-Functional components can handle errors using ErrorBoundary wrappers or useErrorBoundary from libraries like React Error Boundary.
-Alternatively, use try-catch inside async functions or data-fetching logic.
+**1. Tell me about a situation where you had to deal with conflicting priorities or multiple deadlines. How did you manage your tasks?**
 
-⸻
+> During my internship, I had to deliver a UI feature and fix bugs simultaneously.
+> I prioritized tasks based on deadlines and impact, communicated timelines clearly, and broke the work into smaller deliverables to stay on track.
 
-15. Code-Splitting and Dynamic Imports
+---
 
-Use React.lazy() and Suspense:
+**2. Describe a time when you disagreed with your team or manager about a technical approach. How did you resolve it?**
 
-const About = React.lazy(() => import('./About'));
+> Once, I suggested using a simpler layout instead of adding a library.
+> I explained the performance benefits, and we reviewed both options.
+> We agreed on my approach after testing the results together.
 
-This loads the component only when needed, improving performance.
+---
 
-⸻
+**3. How do you handle pressure situations — like production bugs or urgent client requirements?**
 
-16. Context API vs Redux
+> I stay calm and analyze the issue first.
+> For example, if a bug occurs, I reproduce it, check logs, and test possible fixes locally before pushing.
+> I focus on solving, not panicking.
 
-	•	Context API: lightweight and great for simple state sharing (like theme or auth).
-	•	Redux: better for large apps with complex state logic and middleware.
-For mid-size projects, Context API is often enough.
+---
 
-⸻
+**4. Have you ever mentored or onboarded a new developer? What approach did you take to help them ramp up?**
 
-17. Search with Suggestions (Concept)
+> As a fresher, I haven’t mentored yet, but I often help peers understand React basics or project setup.
+> I prefer explaining concepts visually and giving small practice tasks.
 
-Create an input that filters from a static array as user types.
-Highlight matching text using regex and wrap it with a <mark> tag.
-You can manage state using useState and filter suggestions in real-time.
+---
 
-⸻
+**5. In your opinion, what defines a good front-end engineer beyond just writing code?**
 
-🧠 Managerial Round
+> A good engineer writes clean, reusable code, understands user experience, and communicates well with designers and backend teams.
+> It’s not just about coding but delivering an intuitive, responsive interface.
 
-1. Handling Conflicting Priorities
+---
 
-During my internship, I had to deliver a UI feature and fix bugs simultaneously.
-I prioritized tasks based on deadlines and impact, communicated timelines clearly, and broke the work into smaller deliverables to stay on track.
+## 💬 **HR Round**
 
-⸻
+**Expected CTC & Negotiation ?**
 
-2. Disagreement with Team
+> As a fresher, I’m open to the company’s standard range for entry-level roles. My main focus is on learning and growing technically.
 
-Once, I suggested using a simpler layout instead of adding a library.
-I explained the performance benefits, and we reviewed both options.
-We agreed on my approach after testing the results together.
+---
 
-⸻
+**Notice Period Discussion ?**
 
-3. Handling Pressure Situations
+> Since I’m available immediately (or within 30–45 days if applicable), I can join as per project requirements.
 
-I stay calm and analyze the issue first.
-For example, if a bug occurs, I reproduce it, check logs, and test possible fixes locally before pushing.
-I focus on solving, not panicking.
-
-⸻
-
-4. Mentoring or Onboarding
-
-As a fresher, I haven’t mentored yet, but I often help peers understand React basics or project setup.
-I prefer explaining concepts visually and giving small practice tasks.
-
-⸻
-
-5. What Defines a Good Front-End Engineer
-
-A good engineer writes clean, reusable code, understands user experience, and communicates well with designers and backend teams.
-It’s not just about coding but delivering an intuitive, responsive interface.
-
-⸻
-
-💬 HR Round
-
-Expected CTC
-
-As a fresher, I’m open to the company’s standard range for entry-level roles. My main focus is on learning and growing technically.
-
-⸻
-
-Notice Period
-
-Since I’m available immediately (or within 30–45 days if applicable), I can join as per project requirements.
-
-⸻
+---
