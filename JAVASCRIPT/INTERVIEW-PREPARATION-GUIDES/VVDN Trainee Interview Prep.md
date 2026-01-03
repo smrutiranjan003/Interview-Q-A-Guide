@@ -353,59 +353,46 @@ JSON is a lightweight data format used to exchange data between client and serve
 
 ## CLOUD COMPUTING (DAY 2 – HIGH IMPACT)
 
+## INTERVIEW-LEVEL QUESTIONS & ANSWERS (CLOUD FOCUS)
+
 ### What is cloud computing?
 
-Cloud computing means using servers, storage, databases, and software over the internet instead of managing physical hardware locally. It allows on-demand access to resources with flexibility and scalability.
+Cloud computing means using servers, storage, databases, and software over the internet instead of maintaining physical hardware locally.
 
 ---
 
 ### Why do companies use cloud?
 
-* Reduces infrastructure cost
-* Scales easily based on demand
-* Provides high availability
-* Enables faster deployment
-* Reduces maintenance effort
+* Cost saving
+* Scalability
+* High availability
+* Faster deployment
+* Less maintenance
 
 ---
 
-### AWS vs Azure vs GCP
+### Difference between IaaS, PaaS, SaaS?
 
-* AWS: Market leader, wide range of services
-* Azure: Strong integration with Microsoft tools
-* GCP: Strong in data analytics and machine learning
+* **IaaS**: Infrastructure as a Service - Infrastructure like Virtual servers and storage (example: EC2)
+* **PaaS**: Platform as a Service - Platform to develop and deploy applications
+* **SaaS**: Software as a Service - Ready-to-use software over internet (example: Gmail)
+---
+
+### What is AWS?
+
+AWS is Amazon’s cloud platform that provides compute, storage, networking, and other services on demand.
 
 ---
 
-### IaaS, PaaS, SaaS
+### What is virtualization?
 
-* IaaS: Virtual servers and storage (example: EC2)
-* PaaS: Platform to develop and deploy apps
-* SaaS: Ready-to-use software over internet (example: Gmail)
+Virtualization allows multiple virtual machines to run on a single physical server.
 
 ---
 
-### Public vs Private vs Hybrid Cloud
+### What is an API?
 
-* Public cloud: Shared resources, cost-effective
-* Private cloud: Dedicated to one organization
-* Hybrid cloud: Combination of public and private clouds
-
----
-
-## BASIC CLOUD SERVICES
-
-### Compute (EC2 / VM)
-
-Used to run applications and workloads on virtual servers.
-
-### Storage (S3 / Blob)
-
-Used to store files, backups, images, and logs securely.
-
-### Database (RDS / Cloud SQL)
-
-Managed databases that handle backups, scaling, and maintenance automatically.
+API allows two applications to communicate with each other using request and response.
 
 ---
 
@@ -433,7 +420,7 @@ Lightweight, secure, stable, and cost-effective.
 
 ### What is Git?
 
-Git is a version control system used to track code changes.
+Git is a version control system used to track code changes and collaborate with teams.
 
 ### Git vs GitHub
 
