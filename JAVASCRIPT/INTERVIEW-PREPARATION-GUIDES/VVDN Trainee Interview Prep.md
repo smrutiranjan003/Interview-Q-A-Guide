@@ -132,66 +132,126 @@ Prepare **one real-life example** for each.
 
 ---
 
-## EXPECTED CODING QUESTIONS (WITH ANSWERS)
+## EXPECTED CODING QUESTIONS (WITH ANSWERS – C LANGUAGE)
 
-### 1. Reverse a String
+---
+
+## 1. Reverse a String
 
 **Logic**
 
 * Traverse string from end
-* Append characters
+* Print characters in reverse order
 
-```python
-s = "cloud"
-print(s[::-1])
+**C Code**
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char s[] = "cloud";
+    int len = strlen(s);
+
+    for(int i = len - 1; i >= 0; i--) {
+        printf("%c", s[i]);
+    }
+    return 0;
+}
 ```
 
 ---
 
-### 2. Find Largest Number in Array
+## 2. Find Largest Number in Array
 
 **Logic**
 
 * Assume first element is max
-* Compare with others
+* Compare with remaining elements
 
-```python
-arr = [3, 5, 1, 9]
-max_num = arr[0]
-for i in arr:
-    if i > max_num:
-        max_num = i
-print(max_num)
+```c
+#include <stdio.h>
+
+int main() {
+    int arr[] = {3, 5, 1, 9};
+    int size = 4;
+    int max = arr[0];
+
+    for(int i = 1; i < size; i++) {
+        if(arr[i] > max) {
+            max = arr[i];
+        }
+    }
+
+    printf("Largest number: %d", max);
+    return 0;
+}
 ```
 
 ---
 
-### 3. Palindrome Check
+## 3. Palindrome Check
 
-```python
-s = "madam"
-if s == s[::-1]:
-    print("Palindrome")
-else:
-    print("Not Palindrome")
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char s[] = "madam";
+    int len = strlen(s);
+    int flag = 1;
+
+    for(int i = 0; i < len / 2; i++) {
+        if(s[i] != s[len - i - 1]) {
+            flag = 0;
+            break;
+        }
+    }
+
+    if(flag)
+        printf("Palindrome");
+    else
+        printf("Not Palindrome");
+
+    return 0;
+}
 ```
 
 ---
 
-### 4. Count Vowels in String
+## 4. Count Vowels in String
 
-```python
-s = "cloudcomputing"
-count = 0
-for ch in s:
-    if ch in "aeiou":
-        count += 1
-print(count)
+```c
+#include <stdio.h>
+
+int main() {
+    char s[] = "cloudcomputing";
+    int count = 0;
+
+    for(int i = 0; s[i] != '\0'; i++) {
+        if(s[i]=='a' || s[i]=='e' || s[i]=='i' || 
+           s[i]=='o' || s[i]=='u') {
+            count++;
+        }
+    }
+
+    printf("Vowel count: %d", count);
+    return 0;
+}
 ```
 
 ---
 
-## INTERVIEW-LEVEL QUESTIONS & ANSWERS (CLOUD FOCUS)
+## HOW TO EXPLAIN IN INTERVIEW (IMPORTANT FOR C)
+
+If interviewer asks **how this works**, say:
+
+> “I used basic loops and string handling in C. I focused on clarity and logic rather than complex functions, which is suitable for fresher-level programs.”
+
+This answer is **safe and correct**.
+
+---
+INTERVIEW-LEVEL QUESTIONS & ANSWERS (CLOUD FOCUS)
 
 ### What is cloud computing?
 
