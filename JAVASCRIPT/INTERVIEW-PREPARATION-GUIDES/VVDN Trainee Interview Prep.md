@@ -470,7 +470,7 @@ Cloud computing means using servers, storage, and software over the internet ins
 
 If you forget an answer:
 > Say calmly
-“I am not fully sure, but based on my understanding…”
+“I am not fully sure, but I approach this-way based on my understanding…”
 
 This shows honesty and learning mindset.
 
