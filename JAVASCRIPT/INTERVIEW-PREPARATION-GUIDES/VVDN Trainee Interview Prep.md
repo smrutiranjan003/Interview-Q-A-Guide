@@ -460,11 +460,24 @@ If interviewer goes deeper:
 
 ---
 
-## FINAL NOTE
+## Explain Cloud in Simple Words (Interview Gold Answer)
+
+Cloud computing means using servers, storage, and software over the internet instead of installing and maintaining them on our own systems. It helps companies reduce cost, scale easily, and deploy applications faster.
+
+---
+
+## Final Tip
+
+If you forget an answer:
+> Say calmly
+“I am not fully sure, but based on my understanding…”
+
+This shows honesty and learning mindset.
 
 * Revise this document end to end
 * Speak slowly and clearly
 * Explain workflow step by step
 * Stay calm and confident
+
 
 ---
