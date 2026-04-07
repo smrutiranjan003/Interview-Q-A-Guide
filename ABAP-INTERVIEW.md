@@ -218,12 +218,14 @@ Simple output                  |       Structured grid output
 **Q85. What is the basic syntax of a report?**
 
 Example:  
+```abap
 REPORT zsample_report.  
 DATA: lv_text TYPE string VALUE 'Hello SAP'.  
 
 START-OF-SELECTION.  
 WRITE: lv_text.  
 
+```
 Explanation:  
 • REPORT → Program name  
 • DATA → Variable declaration  
@@ -250,14 +252,15 @@ The process to create a report:
 Answer:  
 
 To extract all rows:  
+```abap
 SELECT * FROM table_name INTO TABLE it_tab.  
-
+```
 To extract a particular row:  
-
+```abap
 SELECT * FROM table_name  
 WHERE field = value  
 INTO TABLE it_tab.  
-
+```
 This code is written in SE38 (ABAP report program).
 
 ---
@@ -271,7 +274,7 @@ Dynamic selection screens are created using MODIF ID and AT SELECTION-SCREEN OUT
 We control field visibility or activation dynamically based on user input.  
 
 Example concept:  
-
+```abap
 AT SELECTION-SCREEN OUTPUT.  
 LOOP AT SCREEN.  
 IF screen-group1 = 'A'.  
@@ -279,7 +282,7 @@ screen-active = 0.
 MODIFY SCREEN.  
 ENDIF.  
 ENDLOOP.  
-
+```
 ---
 
 **Q62. Which event is used to validate the input for Select-Options field?**
@@ -289,12 +292,12 @@ The event used is AT SELECTION-SCREEN.
 It is used to validate user input before the report execution.  
 
 Example:  
-
+```abap
 AT SELECTION-SCREEN.  
 IF s_date IS INITIAL.  
   MESSAGE 'Please enter date' TYPE 'E'.  
 ENDIF.  
-
+```
 ---
 
 **Q63. Difference between AT SELECTION-SCREEN and AT SELECTION-SCREEN OUTPUT**
@@ -313,11 +316,11 @@ Radio buttons grouped together allow the user to select only one option at a tim
 Based on the selected radio button, we can control the program logic using IF conditions.  
 
 Example:  
-
+```abap
 IF r1 = 'X'.  
   WRITE 'Option 1 Selected'.  
 ENDIF.  
-
+```
 ---
 
 **Q104. Why did you use LOOP AT SCREEN?**
@@ -333,11 +336,11 @@ Answer:
 A selection screen allows the user to enter input before running a report.  
 
 Example:  
-
+```abap
 PARAMETERS: p_name TYPE string.  
 
 SELECT-OPTIONS: s_date FOR sy-datum.  
-
+```
 • PARAMETERS → Single value input  
 • SELECT-OPTIONS → Range input (multiple values)  
 
@@ -411,9 +414,10 @@ Answer:
 A Function Module is a reusable procedure stored in a Function Group.  
 It can be called from different programs and is used for modular programming and code reuse.  
 
-Example:  
+Example:
+```abap
 CALL FUNCTION 'FUNCTION_NAME'.  
-
+```
 ---
 
 **Q99. What are different types of ABAP programs?**
@@ -492,6 +496,8 @@ Based on the selected radio button, we can control the program logic using IF co
 
 Example:  
 
+```abap
 IF r1 = 'X'.  
   WRITE 'Option 1 Selected'.  
 ENDIF.
+```
